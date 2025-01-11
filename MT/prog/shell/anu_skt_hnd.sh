@@ -85,6 +85,10 @@ shaabdabodha () {
 # Field 9: all possible relations
 }
 
+xvanxva_analysis () {
+  $ANU_MT_PATH/kAraka/xvanxva_analysis.sh $CGIDIR/$SCL_CGI $temp_files_path/$fbn.out.before_parse $temp_files_path/$fbn.out.after_xvanxva
+}
+
 anaphora () {
 # anaphora in the 10th field
      $ANU_MT_PATH/anaphora/anaphora.pl $CGIDIR/$SCL_CGI $ANU_MT_PATH/anaphora < $temp_files_path/$fbn.out > $temp_files_path/tmp
@@ -211,6 +215,10 @@ else
     cp $temp_files_path/$fbn.out.before_parse $temp_files_path/$fbn.out
   fi  # PARSE != AVAILABLE ends here
 
+    # add xvanxva_analysis
+    xvanxva_analysis
+    cp $temp_files_path/$fbn.out.after_xvanxva $temp_files_path/$fbn.out
+    
     shaabdabodha
     cp $temp_files_path/$fbn.out $temp_files_path/$fbn.out.after_parse
     		#`date >> $temp_files_path/err`;
