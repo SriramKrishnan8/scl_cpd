@@ -6,5 +6,14 @@ value jAwivAcaka_list = [
 "xeva";
 "BUpawi";
 "bAla";
+"iBa";
+"agni";
+"go";
+"aSva";
+"kaTa";
+"uxaSviw";
+"uwpala";
+"sarpa";
+"SAli";
 ]
 ;

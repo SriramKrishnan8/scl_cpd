@@ -6,6 +6,9 @@ install:
 	mkdir -p $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA
 	mkdir -p $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/list_n
 	cp shabdabodha.sh $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/
+	cp xvanxva_analysis.sh $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/
+	cp run_xvanxva.py $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/
+	cp xvanxva_analysis.py $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/
 	cp Prepare_Graph/build_graph $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/Prepare_Graph
 	cp uniform_morph_anal.pl $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/
 	cp kaaraka_sharing.pl $(CGIDIR)/$(SCL_CGI)/MT/prog/kAraka/
